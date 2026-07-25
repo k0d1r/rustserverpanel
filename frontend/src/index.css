@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Sleek, professional dark mode (Zinc/Neutral based) */
+  --bg-base: 9 9 11;       /* zinc-950 */
+  --bg-surface: 24 24 27;  /* zinc-900 */
+  --bg-card: 24 24 27;     /* zinc-900 */
+  --bg-card-hover: 39 39 42; /* zinc-800 */
+  
+  --border: 39 39 42;      /* zinc-800 */
+  --border-hover: 82 82 91; /* zinc-600 */
+  
+  --primary: 220 38 38;    /* Red-600 (Rust feel) */
+  --primary-light: 239 68 68; /* Red-500 */
+  --primary-glow: 220 38 38; 
+  
+  --success: 34 197 94;    /* green-500 */
+  --warning: 245 158 11;   /* amber-500 */
+  --error: 239 68 68;      /* red-500 */
+  
+  --text-primary: 250 250 250; /* zinc-50 */
+  --text-secondary: 161 161 170; /* zinc-400 */
+  --text-muted: 113 113 122; /* zinc-500 */
+}
+
+body {
+  @apply text-text-primary font-sans antialiased;
+  margin: 0;
+  min-height: 100vh;
+  background-color: rgb(var(--bg-base));
+  background-image: none; /* Removed the messy gradients */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--bg-base));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--bg-card-hover));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--border-hover));
+}
+
+/* Xterm overrides */
+.xterm .xterm-viewport {
+  background-color: transparent !important;
+}
+
+/* Sleek Panel Utility (Replaces heavy glassmorphism) */
+.glass-panel {
+  @apply border border-border rounded-xl transition-all duration-200;
+  background-color: rgb(var(--bg-card));
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.glass-panel:hover {
+  @apply border-border-hover;
+}
+
+/* Form Elements */
+.input-field {
+  @apply w-full border border-border rounded-lg px-4 py-2.5 text-sm text-text-primary focus:border-primary focus:ring-1 outline-none transition-all placeholder:text-text-muted shadow-sm;
+  background-color: rgb(var(--bg-base));
+}
+
+.input-field:focus {
+  box-shadow: 0 0 0 1px rgb(var(--primary));
+}
+
+.input-field:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.btn-primary {
+  @apply px-4 py-2 bg-primary text-white text-sm font-medium hover:bg-primary-light rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-sm;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-bg-surface border border-border text-text-primary text-sm font-medium hover:bg-bg-card-hover hover:text-white rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-sm;
+}
