@@ -140,14 +140,14 @@ const Dashboard = () => {
             <LineChart data={historyData}>
               <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
               <XAxis dataKey="time" stroke="var(--text-muted)" tick={{fill: 'var(--text-muted)'}} tickLine={false} axisLine={false} minTickGap={30} />
-              <YAxis yAxisId="left" stroke="var(--success)" tick={{fill: 'var(--text-muted)'}} tickLine={false} axisLine={false} />
-              <YAxis yAxisId="right" orientation="right" stroke="var(--warning)" tick={{fill: 'var(--text-muted)'}} tickLine={false} axisLine={false} />
+              <YAxis yAxisId="left" stroke="rgb(var(--success))" tick={{fill: 'var(--text-muted)'}} tickLine={false} axisLine={false} />
+              <YAxis yAxisId="right" orientation="right" stroke="rgb(var(--warning))" tick={{fill: 'var(--text-muted)'}} tickLine={false} axisLine={false} />
               <RechartsTooltip 
                 contentStyle={{ backgroundColor: 'var(--bg-card)', borderColor: 'var(--border)', borderRadius: '8px' }}
                 itemStyle={{ color: 'var(--text-primary)' }}
               />
-              <Line yAxisId="left" type="monotone" dataKey="fps" stroke="var(--success)" strokeWidth={2} dot={false} isAnimationActive={false} />
-              <Line yAxisId="right" type="monotone" dataKey="memory" stroke="var(--warning)" strokeWidth={2} dot={false} isAnimationActive={false} />
+              <Line yAxisId="left" type="monotone" dataKey="fps" stroke="rgb(var(--success))" strokeWidth={2} dot={false} isAnimationActive={false} />
+              <Line yAxisId="right" type="monotone" dataKey="memory" stroke="rgb(var(--warning))" strokeWidth={2} dot={false} isAnimationActive={false} />
             </LineChart>
           </ResponsiveContainer>
         </div>
