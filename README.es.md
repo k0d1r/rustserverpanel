@@ -47,15 +47,25 @@ npm install && npm run build && npm start
 
 
 <div align="center">
-  <img src="assets/screenshots/1.png" width="800" alt="Dashboard" />
+  <img src="assets/screenshots/screenshot1.png" width="800" alt="Screenshot 1" />
   <br/><br/>
-  <img src="assets/screenshots/2.png" width="800" alt="Console" />
+  <img src="assets/screenshots/screenshot2.png" width="800" alt="Screenshot 2" />
   <br/><br/>
-  <img src="assets/screenshots/3.png" width="800" alt="Tasks" />
+  <img src="assets/screenshots/screenshot3.png" width="800" alt="Screenshot 3" />
   <br/><br/>
-  <img src="assets/screenshots/4.png" width="800" alt="Settings" />
+  <img src="assets/screenshots/screenshot4.png" width="800" alt="Screenshot 4" />
   <br/><br/>
-  <img src="assets/screenshots/5.png" width="800" alt="Plugins" />
+  <img src="assets/screenshots/screenshot5.png" width="800" alt="Screenshot 5" />
+  <br/><br/>
+  <img src="assets/screenshots/screenshot6.png" width="800" alt="Screenshot 6" />
+  <br/><br/>
+  <img src="assets/screenshots/screenshot7.png" width="800" alt="Screenshot 7" />
+  <br/><br/>
+  <img src="assets/screenshots/screenshot8.png" width="800" alt="Screenshot 8" />
+  <br/><br/>
+  <img src="assets/screenshots/screenshot9.png" width="800" alt="Screenshot 9" />
+  <br/><br/>
+  <img src="assets/screenshots/screenshot10.png" width="800" alt="Screenshot 10" />
 </div>
 
 
