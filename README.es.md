@@ -46,27 +46,25 @@ npm install && npm run build && npm start
 ## 📸 Capturas de pantalla
 
 
-<div align="center">
-  <img src="assets/screenshots/screenshot1.png" width="800" alt="Screenshot 1" />
-  <br/><br/>
-  <img src="assets/screenshots/screenshot2.png" width="800" alt="Screenshot 2" />
-  <br/><br/>
-  <img src="assets/screenshots/screenshot3.png" width="800" alt="Screenshot 3" />
-  <br/><br/>
-  <img src="assets/screenshots/screenshot4.png" width="800" alt="Screenshot 4" />
-  <br/><br/>
-  <img src="assets/screenshots/screenshot5.png" width="800" alt="Screenshot 5" />
-  <br/><br/>
-  <img src="assets/screenshots/screenshot6.png" width="800" alt="Screenshot 6" />
-  <br/><br/>
-  <img src="assets/screenshots/screenshot7.png" width="800" alt="Screenshot 7" />
-  <br/><br/>
-  <img src="assets/screenshots/screenshot8.png" width="800" alt="Screenshot 8" />
-  <br/><br/>
-  <img src="assets/screenshots/screenshot9.png" width="800" alt="Screenshot 9" />
-  <br/><br/>
-  <img src="assets/screenshots/screenshot10.png" width="800" alt="Screenshot 10" />
-</div>
+![Screenshot 1](./assets/screenshots/screenshot1.png)
+
+![Screenshot 2](./assets/screenshots/screenshot2.png)
+
+![Screenshot 3](./assets/screenshots/screenshot3.png)
+
+![Screenshot 4](./assets/screenshots/screenshot4.png)
+
+![Screenshot 5](./assets/screenshots/screenshot5.png)
+
+![Screenshot 6](./assets/screenshots/screenshot6.png)
+
+![Screenshot 7](./assets/screenshots/screenshot7.png)
+
+![Screenshot 8](./assets/screenshots/screenshot8.png)
+
+![Screenshot 9](./assets/screenshots/screenshot9.png)
+
+![Screenshot 10](./assets/screenshots/screenshot10.png)
 
 
 ---
