@@ -106,5 +106,21 @@
     "executeManual": "Выполнить",
     "executeTask": "Выполнить",
     "warning": "Предупреждение"
+  },
+  "plugins": {
+    "curated": "Рекомендуемые плагины",
+    "installed": "Установленные",
+    "store": "Магазин плагинов",
+    "uploadCustom": "Загрузить свой плагин",
+    "catModded": "С модами",
+    "catCommunity": "Сообщество",
+    "kitsTitle": "Плагин Китов",
+    "kitsDesc": "Больше инфы на https://umod.org/plugins/Kits",
+    "timeTitle": "Длина дня и ночи",
+    "timeDesc": "Помогает настроить длительность дня и ночи.",
+    "radarTitle": "ESP для Админов",
+    "radarDesc": "Дает ESP админам. Злоупотребление грозит баном!",
+    "vanishTitle": "Невидимость Админа",
+    "vanishDesc": "Позволяет админам становиться полностью невидимыми."
   }
 }

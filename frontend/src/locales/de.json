@@ -106,5 +106,21 @@
     "executeManual": "Ausführen",
     "executeTask": "Ausführen",
     "warning": "Warnung"
+  },
+  "plugins": {
+    "curated": "Empfohlene Plugins",
+    "installed": "Installiert",
+    "store": "Plugin Store",
+    "uploadCustom": "Eigenes Plugin hochladen",
+    "catModded": "Gemoddet",
+    "catCommunity": "Community",
+    "kitsTitle": "Kits Plugin",
+    "kitsDesc": "Mehr Infos unter https://umod.org/plugins/Kits",
+    "timeTitle": "Tag/Nacht Dauer",
+    "timeDesc": "Hilft dir, die Tag- und Nachtdauer deines Servers einzustellen.",
+    "radarTitle": "Admin ESP",
+    "radarDesc": "Gibt Admins ESP. Missbrauch kann zu einem Server-Bann führen!",
+    "vanishTitle": "Admin Unsichtbarkeit",
+    "vanishDesc": "Erlaubt Admins, für Spieler völlig unsichtbar zu werden."
   }
 }

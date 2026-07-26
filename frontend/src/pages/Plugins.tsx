@@ -1,19 +1,22 @@
 import { useState, useEffect, useRef } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { Search, RefreshCw, Download, ExternalLink, Puzzle, Package, Clock, EyeOff, Shield, Upload } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import client from '../api/client';
 import { InstalledPlugin, UModPlugin } from '../types';
 
 const CATEGORIES = ['All', 'Administration', 'Gameplay', 'Economy', 'Social', 'Security', 'Fun/Events', 'Utility', 'Developer'];
 
-const CURATED_PLUGINS = [
-  { name: 'Kits', title: 'Kit Eklentisi', description: 'Daha fazla bilgi için https://umod.org/plugins/Kits', author: 'Reneb', icon: Package, category: 'Eklentili' },
-  { name: 'TimeOfDay', title: 'Gece Gündüz Süreleri', description: 'Sunucunuzun gece ve gündüz sürelerini ayarlamanıza yardımcı olur.', author: 'FuJiCuRa', icon: Clock, category: 'Eklentili' },
-  { name: 'AdminRadar', title: 'Adminler İçin Esp', description: 'Adminlere ESP özelliği verir. Kötüye kullanımda sunucunuz banlanabilir!', author: 'nivex', icon: EyeOff, category: 'Topluluk' },
-  { name: 'Vanish', title: 'Adminler İçin Görünmezlik', description: 'Adminlerin tamamen görünmez olmasına izin verir. Oyuncular sizi göremez.', author: 'Wulf', icon: Shield, category: 'Eklentili' },
-];
-
 const Plugins = () => {
+  const { t } = useTranslation();
+
+  const CURATED_PLUGINS = [
+    { name: 'Kits', title: t('plugins.kitsTitle', 'Kit Plugin'), description: t('plugins.kitsDesc', 'More info at https://umod.org/plugins/Kits'), author: 'Reneb', icon: Package, category: t('plugins.catModded', 'Modded') },
+    { name: 'TimeOfDay', title: t('plugins.timeTitle', 'Day/Night Length'), description: t('plugins.timeDesc', 'Helps you configure day and night lengths of your server.'), author: 'FuJiCuRa', icon: Clock, category: t('plugins.catModded', 'Modded') },
+    { name: 'AdminRadar', title: t('plugins.radarTitle', 'Admin ESP'), description: t('plugins.radarDesc', 'Gives ESP to admins. Abuse can get your server banned!'), author: 'nivex', icon: EyeOff, category: t('plugins.catCommunity', 'Community') },
+    { name: 'Vanish', title: t('plugins.vanishTitle', 'Admin Invisibility'), description: t('plugins.vanishDesc', 'Allows admins to become completely invisible to players.'), author: 'Wulf', icon: Shield, category: t('plugins.catModded', 'Modded') },
+  ];
+
   const [activeTab, setActiveTab] = useState<'curated' | 'installed' | 'store'>('curated');
   const [search, setSearch] = useState('');
   const [category, setCategory] = useState('All');
@@ -117,26 +120,26 @@ const Plugins = () => {
   return (
     <div className="space-y-6 animate-fade-in h-full flex flex-col">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-text-primary">Plugins</h1>
+        <h1 className="text-2xl font-bold text-text-primary">{t('sidebar.plugins', 'Plugins')}</h1>
         
         <div className="flex bg-bg-surface p-1 rounded-lg border border-border">
           <button 
             className={`px-4 py-1.5 text-sm font-medium rounded-md transition-colors ${activeTab === 'curated' ? 'bg-primary text-white' : 'text-text-secondary hover:text-text-primary'}`}
             onClick={() => setActiveTab('curated')}
           >
-            Önerilen Eklentiler
+            {t('plugins.curated', 'Curated Plugins')}
           </button>
           <button 
             className={`px-4 py-1.5 text-sm font-medium rounded-md transition-colors ${activeTab === 'installed' ? 'bg-primary text-white' : 'text-text-secondary hover:text-text-primary'}`}
             onClick={() => setActiveTab('installed')}
           >
-            Installed
+            {t('plugins.installed', 'Installed')}
           </button>
           <button 
             className={`px-4 py-1.5 text-sm font-medium rounded-md transition-colors ${activeTab === 'store' ? 'bg-primary text-white' : 'text-text-secondary hover:text-text-primary'}`}
             onClick={() => setActiveTab('store')}
           >
-            Plugin Store
+            {t('plugins.store', 'Plugin Store')}
           </button>
         </div>
         
@@ -153,7 +156,7 @@ const Plugins = () => {
             className="flex items-center gap-2 px-4 py-2 bg-bg-surface border border-border hover:border-primary rounded-md text-sm transition-colors text-text-primary"
           >
             <Upload size={16} className="text-primary" />
-            Upload Custom Plugin
+            {t('plugins.uploadCustom', 'Upload Custom Plugin')}
           </button>
         </div>
       </div>
@@ -164,9 +167,9 @@ const Plugins = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Eklentili Category */}
               <div>
-                <h2 className="text-sm font-bold text-text-secondary uppercase tracking-wider mb-4 border-b border-border pb-2">Eklentili</h2>
+                <h2 className="text-sm font-bold text-text-secondary uppercase tracking-wider mb-4 border-b border-border pb-2">{t('plugins.catModded', 'Modded')}</h2>
                 <div className="space-y-4">
-                  {CURATED_PLUGINS.filter(p => p.category === 'Eklentili').map(plugin => {
+                  {CURATED_PLUGINS.filter(p => p.category === t('plugins.catModded', 'Modded')).map(plugin => {
                     const Icon = plugin.icon;
                     return (
                       <div key={plugin.name} className="bg-bg-surface border border-border rounded-lg p-4 hover:border-border-hover transition-colors flex items-center gap-4">
@@ -190,9 +193,9 @@ const Plugins = () => {
 
               {/* Topluluk Category */}
               <div>
-                <h2 className="text-sm font-bold text-text-secondary uppercase tracking-wider mb-4 border-b border-border pb-2">Topluluk</h2>
+                <h2 className="text-sm font-bold text-text-secondary uppercase tracking-wider mb-4 border-b border-border pb-2">{t('plugins.catCommunity', 'Community')}</h2>
                 <div className="space-y-4">
-                  {CURATED_PLUGINS.filter(p => p.category === 'Topluluk').map(plugin => {
+                  {CURATED_PLUGINS.filter(p => p.category === t('plugins.catCommunity', 'Community')).map(plugin => {
                     const Icon = plugin.icon;
                     return (
                       <div key={plugin.name} className="bg-bg-surface border border-border rounded-lg p-4 hover:border-border-hover transition-colors flex items-center gap-4">

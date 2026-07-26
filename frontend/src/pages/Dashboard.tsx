@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { Users, Cpu, Clock, Box } from 'lucide-react';
+import { Users, Cpu, Clock, Box, Activity } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { LineChart, Line, XAxis, YAxis, Tooltip as RechartsTooltip, ResponsiveContainer, CartesianGrid } from 'recharts';
 import StatCard from '../components/StatCard';
@@ -196,8 +196,5 @@ const Dashboard = () => {
     </div>
   );
 };
-
-// Quick fix for missing Activity icon import in StatCard usage
-import { Activity } from 'lucide-react';
 
 export default Dashboard;

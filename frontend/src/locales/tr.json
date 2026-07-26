@@ -106,5 +106,21 @@
     "executeManual": "Manuel Çalıştır",
     "executeTask": "Görevi Çalıştır",
     "warning": "Uyarı"
+  },
+  "plugins": {
+    "curated": "Önerilen Eklentiler",
+    "installed": "Yüklü Olanlar",
+    "store": "Eklenti Mağazası",
+    "uploadCustom": "Özel Eklenti Yükle",
+    "catModded": "Eklentili",
+    "catCommunity": "Topluluk",
+    "kitsTitle": "Kit Eklentisi",
+    "kitsDesc": "Daha fazla bilgi için https://umod.org/plugins/Kits",
+    "timeTitle": "Gece Gündüz Süreleri",
+    "timeDesc": "Sunucunuzun gece ve gündüz sürelerini ayarlamanıza yardımcı olur.",
+    "radarTitle": "Adminler İçin Esp",
+    "radarDesc": "Adminlere ESP özelliği verir. Kötüye kullanımda sunucunuz banlanabilir!",
+    "vanishTitle": "Adminler İçin Görünmezlik",
+    "vanishDesc": "Adminlerin tamamen görünmez olmasına izin verir. Oyuncular sizi göremez."
   }
 }

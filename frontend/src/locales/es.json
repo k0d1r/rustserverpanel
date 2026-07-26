@@ -106,5 +106,21 @@
     "executeManual": "Ejecutar",
     "executeTask": "Ejecutar",
     "warning": "Aviso"
+  },
+  "plugins": {
+    "curated": "Plugins Recomendados",
+    "installed": "Instalados",
+    "store": "Tienda de Plugins",
+    "uploadCustom": "Subir Plugin Propio",
+    "catModded": "Modificados",
+    "catCommunity": "Comunidad",
+    "kitsTitle": "Plugin de Kits",
+    "kitsDesc": "Más info en https://umod.org/plugins/Kits",
+    "timeTitle": "Duración de Día/Noche",
+    "timeDesc": "Te ayuda a configurar la duración del día y la noche.",
+    "radarTitle": "ESP para Admins",
+    "radarDesc": "Otorga ESP a los admins. ¡El abuso puede causar baneos!",
+    "vanishTitle": "Invisibilidad Admin",
+    "vanishDesc": "Permite a los administradores ser completamente invisibles."
   }
 }

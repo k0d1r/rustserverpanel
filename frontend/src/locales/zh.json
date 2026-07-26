@@ -106,5 +106,21 @@
     "executeManual": "执行",
     "executeTask": "执行",
     "warning": "警告"
+  },
+  "plugins": {
+    "curated": "推荐插件",
+    "installed": "已安装",
+    "store": "插件商店",
+    "uploadCustom": "上传自定义插件",
+    "catModded": "模组",
+    "catCommunity": "社区",
+    "kitsTitle": "工具包插件",
+    "kitsDesc": "详情见 https://umod.org/plugins/Kits",
+    "timeTitle": "日夜时长",
+    "timeDesc": "帮助您配置服务器的昼夜时长。",
+    "radarTitle": "管理员透视",
+    "radarDesc": "给予管理员透视。滥用会导致服务器被封！",
+    "vanishTitle": "管理员隐身",
+    "vanishDesc": "允许管理员对玩家完全隐身。"
   }
 }
