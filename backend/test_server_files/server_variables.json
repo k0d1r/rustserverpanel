@@ -1,0 +1,11 @@
+{
+  "serverName": "My Rust Server",
+  "mapType": "Procedural Map",
+  "worldSize": 3500,
+  "seed": 12345,
+  "description": "Welcome to my Rust server!",
+  "website": "https://rustmaps.com",
+  "maxPlayers": 100,
+  "serverImage": "",
+  "modded": true
+}
